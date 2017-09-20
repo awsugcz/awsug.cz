@@ -1,5 +1,5 @@
 # What's new in AWS
-https://aws.amazon.com/blogs/aws/
+https://aws.amazon.com/blogs/aws/, https://aws.amazon.com/new/, https://aws.amazon.com/blogs/mt/
 
 
 ## Elasticsearch 5.5
@@ -55,13 +55,15 @@ https://aws.amazon.com/blogs/aws/new-high-resolution-custom-metrics-and-alarms-f
 
 * [CloudWatch](http://aws.amazon.com/cloudwatch/) with 1-second resolution (it's for 5 minutes by default and every minute for "[Detailed Monitoring](https://aws.amazon.com/blogs/aws/amazon-cloudwatch-basic-monitoring-for-ec2-at-no-charge/)")
 
+![High-Resolution Custom Metrics and Alarms for Amazon CloudWatch](https://media.amazonwebservices.com/blog/2017/cwhr_graph_zoom_1.png "High-Resolution Custom Metrics and Alarms for Amazon CloudWatch")
+
 
 ## Application Load Balancing via IP Address to AWS & On-Premises Resources
 https://aws.amazon.com/blogs/aws/new-application-load-balancing-via-ip-address-to-aws-on-premises-resources/
 
 * Layer 7 (application) routing to EC2 instances and to microservices running in containers
 
-* Customers need hybrid applications when spreading traffic across a combination of existing on-premises resources and new resources running in the AWS Cloud.
+* Customers need hybrid applications when spreading traffic across a combination of existing on-premises resources and new resources running in the AWS Cloud
 
 ![target type](https://media.amazonwebservices.com/blog/2017/alb_target_type_2.png "target type")
 
@@ -90,5 +92,20 @@ https://aws.amazon.com/blogs/aws/new-per-second-billing-for-ec2-instances-and-eb
 
 ## Amazon Aurora Enables Database Activity Monitoring with CloudWatch Logs
 https://aws.amazon.com/about-aws/whats-new/2017/09/amazon-aurora-enables-database-activity-monitoring-with-cloudwatch-logs/
+https://aws.amazon.com/blogs/database/monitoring-amazon-aurora-audit-events-with-amazon-cloudwatch/
 
 * Events recorded in Amazon Aurora (such as database logins, user information, details of queries executed, and impacted tables) may log to CloudWatch
+
+![Amazon Aurora Enables Database Activity Monitoring with CloudWatch Logs](https://d2908q01vomqb2.cloudfront.net/887309d048beef83ad3eabf2a79a64a389ab1c9f/2017/09/08/Search-Logs.jpg "Amazon Aurora Enables Database Activity Monitoring with CloudWatch Logs")
+
+![Amazon Aurora Enables Database Activity Monitoring with CloudWatch Logs](https://d2908q01vomqb2.cloudfront.net/887309d048beef83ad3eabf2a79a64a389ab1c9f/2017/09/11/Define-Pattern1.jpg "Amazon Aurora Enables Database Activity Monitoring with CloudWatch Logs")
+
+
+## Stop & Resume Workloads on EC2 Spot Instances
+https://aws.amazon.com/blogs/aws/new-stop-resume-workloads-on-ec2-spot-instances/
+
+* Set up Spot bids and Spot Fleets that respond by stopping (rather than terminating) instances when capacity is no longer available at or below your bid price
+
+* EBS volumes attached to stopped instances remain intact, as does the EBS-backed root volume
+
+![Stop & Resume Workloads on EC2 Spot Instances](https://media.amazonwebservices.com/blog/2017/spot_set_stop_1.png "Stop & Resume Workloads on EC2 Spot Instances")
