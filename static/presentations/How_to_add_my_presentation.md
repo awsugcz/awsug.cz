@@ -2,7 +2,7 @@
 
 I would like to ask all speakers to upload their presenation to the GiHub the following way:
 
-* Fork the repository from the https://github.com/awsugcz/awsug.cz (top right Fork button).
+* Fork the repository from the https://github.com/awsugcz/awsug.cz (top right ```Fork``` button).
 
 * Clone forked repository from your personal GitHub account and create the branch:
 ```
@@ -68,6 +68,6 @@ To github.com:ruzickap/awsug.cz.git
  * [new branch]      feature/add_presentation -> feature/add_presentation
 ```
 
-* Then you should check your repository in the GitHub and click green button "Compare & pull request" which will guide you to create PR to the official [awsug.cz](https://github.com/awsugcz/awsug.cz) repository.
+* Then you should check your repository in the GitHub and click green button ```Compare & pull request``` which will guide you to create PR to the official [awsug.cz](https://github.com/awsugcz/awsug.cz) repository.
 
 Thank you very much for your help...
