@@ -29,7 +29,7 @@ vi static/presentations/2017-12-12/README.md
 
 * Check + add all modified files to the git repository and push it back to GitHub:
 ```
-$ git status$ git status
+$ git status
 On branch feature/add_presentation
 Your branch is up-to-date with 'origin/master'.
 
