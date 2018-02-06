@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "http://awsug.cz/"
+baseurl = "https://awsug.cz/"
 languageCode = "en-us"
 title = "Prague AWS User Group"
 theme = "hugo-creative-theme"
