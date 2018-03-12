@@ -17,12 +17,12 @@ git checkout -b feature/add_presentation remotes/origin/master
 cp ~/presentations/my_presentation.pdf static/presentations/2017-12-12/2017-09-20-Vladimir_Simek-Running_Docker_Containers_on_AWS.pdf
 ```
 
-* Please put your name + contact details here (the order of the speakers should be preserved):
+* Please put your name + contact details here (the **order** of the speakers should be **preserved**):
 ```
 vi static/presentations/README.md
 ```
 
-* Lastly - add your name and presentation title here (the order of the speakers should be preserved):
+* Lastly - add your name and presentation title here (the **order** of the speakers should be **preserved**):
 ```
 vi static/presentations/2017-12-12/README.md
 ```
