@@ -1,0 +1,15 @@
+sudo: required
+
+services:
+  - docker
+
+install:
+  - gem install awesome_bot
+  - HUGO_LATEST_URL=$(curl --silent --location https://api.github.com/repos/spf13/hugo/releases/latest | awk -F \" '/browser_download_url.*Linux-64bit.tar.gz/ { print $4 }')
+  - curl --silent --location $HUGO_LATEST_URL | sudo tar xvzf - -C /usr/local/bin/ hugo
+
+script:
+  - export HOST_IP_ADDRESS="$(ip -4 addr show docker0 | sed -n 's/.* inet \([^/]*\).*/\1/p')"
+  - hugo server --bind ${HOST_IP_ADDRESS} --baseURL http://my-hugo-testing-domain.com &
+  - docker run -it --rm --add-host my-hugo-testing-domain.com:${HOST_IP_ADDRESS} jare/linkchecker --check-extern http://my-hugo-testing-domain.com:1313
+  - awesome_bot --allow 999 --white-list 'https://localhost:1313' --allow-dupe --allow-redirect --skip-save-results `find . -name *.md`
