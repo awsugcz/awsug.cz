@@ -11,5 +11,5 @@ install:
 script:
   - export HOST_IP_ADDRESS="$(ip -4 addr show docker0 | sed -n 's/.* inet \([^/]*\).*/\1/p')"
   - hugo server --bind ${HOST_IP_ADDRESS} --baseURL http://my-hugo-testing-domain.com &
-  - docker run -it --rm --add-host my-hugo-testing-domain.com:${HOST_IP_ADDRESS} jare/linkchecker --check-extern http://my-hugo-testing-domain.com:1313
+  - docker run -it --rm --add-host my-hugo-testing-domain.com:${HOST_IP_ADDRESS} linkchecker/linkchecker --check-extern http://my-hugo-testing-domain.com:1313
   - awesome_bot --allow 999 --white-list 'https://localhost:1313' --allow-dupe --allow-redirect --skip-save-results `find . -name *.md`
