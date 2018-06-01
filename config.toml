@@ -35,6 +35,7 @@ googleAnalytics = "UA-96620987-2"
         [params.navigation.links]
             about     = "About"
             services  = "Services"
+            portfolio = "Meetups"
             contact   = "Contact"
 
 
@@ -69,13 +70,19 @@ googleAnalytics = "UA-96620987-2"
         [[params.services.list]]
             icon = "fa-github-alt"
             title = "I want to help."
-            description = "See our current [issues](https://github.com/awsugcz)"
+            description = "See our [GitHub](https://github.com/awsugcz)"
 
         [[params.services.list]]
             icon = "fa-google-plus"
             title = "Made with Love"
             description = "Help with the community [G+](https://plus.google.com/communities/110661126923491577205)"
 
+    # Portfolio modals
+        [params.portfolio.modal]
+        client = "Client"
+        date = "Date"
+        category = "Category"
+        buttonText = "Close"
 
     # Contact section
     [params.contact]
