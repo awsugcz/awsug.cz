@@ -60,7 +60,7 @@ googleAnalytics = "UA-96620987-2"
         [[params.services.list]]
             icon = "fa-meetup"
             title = "Get social!"
-            description = "Join our [meetup group](https://www.meetup.com/Prague-AWS-Meetup/)"
+            description = "Join our [Meetup group](https://www.meetup.com/Prague-AWS-Meetup/)"
 
         [[params.services.list]]
             icon = "fa-podcast"
@@ -69,8 +69,13 @@ googleAnalytics = "UA-96620987-2"
 
         [[params.services.list]]
             icon = "fa-github-alt"
-            title = "I want to help."
+            title = "I want to help"
             description = "See our [GitHub](https://github.com/awsugcz)"
+
+        [[params.services.list]]
+            icon = "fa-youtube"
+            title = "YouTube"
+            description = "[YouTube Channel](https://www.youtube.com/playlist?list=PL0Qk7ytdTD262PgKQ1GgFHX2IdYzhWM1E)"
 
         [[params.services.list]]
             icon = "fa-google-plus"
