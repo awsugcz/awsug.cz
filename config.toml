@@ -82,6 +82,11 @@ googleAnalytics = "UA-96620987-2"
             title = "Made with Love"
             description = "Help with the community [G+](https://plus.google.com/communities/110661126923491577205)"
 
+        [[params.services.list]]
+            icon = "fa-envelope-o"
+            title = "Email"
+            description = "<awsugcz@gmail.com>"
+
     # Portfolio modals
         [params.portfolio.modal]
         client = "Client"
