@@ -43,14 +43,14 @@ googleAnalytics = "UA-96620987-2"
     [params.hero]
         # To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
         slogan     = "Prague AWS User Group"
-        subtitle   = "Welcome to [Prague AWS User Group](https://www.meetup.com/Prague-AWS-Meetup/)."
+        subtitle   = "Welcome to [Prague AWS User Group](https://www.meetup.com/Prague-AWS-Meetup/)"
         buttonText = "Find out more ..."
 
 
     # About section
     [params.about]
         headline    = "Prague Amazon Web Services User Group"
-        description = "We are a community with a mission to educate and connect people interested in Amazon Web Services and related technologies."
+        description = "We are a community with a mission to educate and connect people interested in [Amazon Web Services](https://aws.amazon.com/) and related technologies."
         buttonText  = "Get started!"
 
 

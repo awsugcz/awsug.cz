@@ -5,11 +5,23 @@ services:
 
 install:
   - gem install awesome_bot
-  - HUGO_LATEST_URL=$(curl --silent --location https://api.github.com/repos/spf13/hugo/releases/latest | awk -F \" '/browser_download_url.*Linux-64bit.tar.gz/ { print $4 }')
-  - curl --silent --location $HUGO_LATEST_URL | sudo tar xvzf - -C /usr/local/bin/ hugo
+  - export HUGO_LATEST_RELEASE=$(curl -s https://github.com/gohugoio/hugo/releases/latest | sed 's@.*releases/tag/v\([^"]*\).*@\1@')
+  - curl --silent --location https://github.com/gohugoio/hugo/releases/download/v${HUGO_LATEST_RELEASE}/hugo_${HUGO_LATEST_RELEASE}_Linux-64bit.tar.gz | sudo tar xvzf - -C /usr/local/bin/ hugo
+  - rm -rf public || exit 0
 
 script:
   - export HOST_IP_ADDRESS="$(ip -4 addr show docker0 | sed -n 's/.* inet \([^/]*\).*/\1/p')"
-  - hugo server --bind ${HOST_IP_ADDRESS} --baseURL http://my-hugo-testing-domain.com &
-  - docker run -it --rm --add-host my-hugo-testing-domain.com:${HOST_IP_ADDRESS} linkchecker/linkchecker --check-extern http://my-hugo-testing-domain.com:1313
+  - hugo server --bind ${HOST_IP_ADDRESS} --baseURL http://${TRAVIS_REPO_SLUG##*/} &
+  - docker run -it --rm --add-host ${TRAVIS_REPO_SLUG##*/}:${HOST_IP_ADDRESS} linkchecker/linkchecker --check-extern http://${TRAVIS_REPO_SLUG##*/}:1313
   - awesome_bot --allow 999 --white-list 'https://localhost:1313' --allow-dupe --allow-redirect --skip-save-results `find . -name *.md`
+  - hugo
+
+# Deploy to GitHub pages
+deploy:
+  provider: pages
+  fqdn: ${TRAVIS_REPO_SLUG##*/}
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: public
+  on:
+    branch: master
