@@ -51,7 +51,6 @@ googleAnalytics = "UA-96620987-2"
     [params.about]
         headline    = "Prague Amazon Web Services User Group"
         description = "We are a community with a mission to educate and connect people interested in [Amazon Web Services](https://aws.amazon.com/) and related technologies."
-        buttonText  = "Get started!"
 
 
     # Services section
