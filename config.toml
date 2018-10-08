@@ -79,7 +79,7 @@ googleAnalytics = "UA-96620987-2"
         [[params.services.list]]
             icon = "fa-google-plus"
             title = "Made with Love"
-            description = "Help with the community [G+](https://plus.google.com/communities/110661126923491577205)"
+            description = "Help with the community [G+](https://plus.google.com/113057208587821984112)"
 
         [[params.services.list]]
             icon = "fa-envelope-o"
