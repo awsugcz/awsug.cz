@@ -1,17 +1,41 @@
+dist: xenial
+
 services:
   - docker
 
+node_js:
+  - "8"
+
 install:
-  - gem install awesome_bot
+  # Install Hugo
   - export HUGO_LATEST_RELEASE=$(curl -s https://github.com/gohugoio/hugo/releases/latest | sed 's@.*releases/tag/v\([^"]*\).*@\1@')
   - curl --silent --location https://github.com/gohugoio/hugo/releases/download/v${HUGO_LATEST_RELEASE}/hugo_${HUGO_LATEST_RELEASE}_Linux-64bit.tar.gz | sudo tar xvzf - -C /usr/local/bin/ hugo
+
+  # Install markdownlint and markdown-link-check
+  - npm install -g markdownlint-cli markdown-link-check > /dev/null
+
+  # Remove public directory if exists
   - rm -rf public || exit 0
 
 script:
+  # Get local IP
   - export HOST_IP_ADDRESS="$(ip -4 addr show docker0 | sed -n 's/.* inet \([^/]*\).*/\1/p')"
+
+  # Generate pages by Hugo and run it's web server
   - hugo server --bind ${HOST_IP_ADDRESS} --baseURL http://${TRAVIS_REPO_SLUG##*/} &
+
+  # Check links on generated pages
   - docker run -it --rm --add-host ${TRAVIS_REPO_SLUG##*/}:${HOST_IP_ADDRESS} linkchecker/linkchecker --check-extern http://${TRAVIS_REPO_SLUG##*/}:1313
-  - awesome_bot --allow 999 --white-list 'https://localhost:1313' --allow-dupe --allow-redirect --skip-save-results `find . -name *.md`
+
+  # Markdown check
+  - echo '"line-length": false' > /tmp/markdownlint_config.json
+  - find . -path ./themes -prune -o -name "*.md" -exec markdownlint -c /tmp/markdownlint_config.json {} \;
+
+  # Link Checks
+  - echo '{ "ignorePatterns": [ { "pattern": "^(http|https)://localhost" } ] }' > /tmp/config.json
+  - find . -path ./themes -prune -o -name "*.md" -exec markdown-link-check --config /tmp/config.json {} \;
+
+  # Generate pages
   - hugo
 
 # Deploy to GitHub pages
