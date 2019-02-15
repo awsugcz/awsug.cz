@@ -28,11 +28,11 @@ script:
   - docker run -it --rm --add-host ${TRAVIS_REPO_SLUG##*/}:${HOST_IP_ADDRESS} linkchecker/linkchecker --check-extern http://${TRAVIS_REPO_SLUG##*/}:1313
 
   # Markdown check
-  - find . -path ./themes -prune -o -name "*.md" -exec markdownlint {} \;
+  - find . -path ./themes -prune -o -name "*.md" -print0 | xargs -0 markdownlint
 
   # Link Checks
   - 'echo "{ \"ignorePatterns\": [{ \"pattern\": \"^https://www.linkedin.com\" }] }" > /tmp/markdown-link-check.json'
-  - find . -path ./themes -prune -o -name "*.md" -exec markdown-link-check --config /tmp/markdown-link-check.json {} \;
+  - find . -path ./themes -prune -o -name "*.md" -print0 | xargs -0 markdown-link-check --config /tmp/markdown-link-check.json --quiet
 
   # Generate pages
   - hugo
