@@ -1,10 +1,14 @@
 # How to add+share my presentation
 
-I would like to ask all speakers to upload their presenation to the GiHub the following way:
+I would like to ask all speakers to upload their presenation to the GiHub
+the following way:
 
-* Fork the repository from the [https://github.com/awsugcz/awsug.cz](https://github.com/awsugcz/awsug.cz) (top right ```Fork``` button).
+* Fork the repository from the
+  [https://github.com/awsugcz/awsug.cz](https://github.com/awsugcz/awsug.cz)
+  (top right ```Fork``` button).
 
-* Clone forked repository from your personal GitHub account and create the branch:
+* Clone forked repository from your personal GitHub account
+  and create the branch:
 
   ```bash
   cd /tmp
@@ -13,25 +17,30 @@ I would like to ask all speakers to upload their presenation to the GiHub the fo
   git checkout -b feature/add_presentation remotes/origin/master
   ```
 
-* Copy your presentation to the directory inside Git repository. The presentation file name should looks like "```<date>-<name_surname>-<presentation_name>.pdf```":
+* Copy your presentation to the directory inside Git repository.
+  The presentation file name should looks like
+  "```<date>-<name_surname>-<presentation_name>.pdf```":
 
   ```bash
   cp ~/presentations/my_presentation.pdf static/presentations/2017-12-12/2017-09-20-Vladimir_Simek-Running_Docker_Containers_on_AWS.pdf
   ```
 
-* Please put your name + contact details here (the **order** of the speakers should be **preserved**):
+* Please put your name + contact details here (the **order** of the speakers
+  should be **preserved**):
 
   ```bash
   vi static/presentations/README.md
   ```
 
-* Lastly - add your name and presentation title here (the **order** of the speakers should be **preserved**):
+* Lastly - add your name and presentation title here (the **order** of the
+  speakers should be **preserved**):
 
   ```bash
   vi static/presentations/2017-12-12/README.md
   ```
 
-* Check + add all modified files to the git repository and push it back to GitHub:
+* Check + add all modified files to the git repository and push it back
+  to GitHub:
 
   ```bash
   $ git status
@@ -73,6 +82,8 @@ I would like to ask all speakers to upload their presenation to the GiHub the fo
   * [new branch]      feature/add_presentation -> feature/add_presentation
   ```
 
-* Then you should check your repository in the GitHub and click green button ```Compare & pull request``` which will guide you to create PR to the official [awsug.cz](https://github.com/awsugcz/awsug.cz) repository.
+* Then you should check your repository in the GitHub and click green button
+  `Compare & pull request` which will guide you to create PR to the official
+  [awsug.cz](https://github.com/awsugcz/awsug.cz) repository.
 
 Thank you very much for your help...
