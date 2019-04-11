@@ -3,8 +3,7 @@ dist: xenial
 services:
   - docker
 
-node_js:
-  - "10"
+node_js: 10
 
 install:
   # Install Hugo
