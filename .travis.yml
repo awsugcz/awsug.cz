@@ -1,5 +1,9 @@
 dist: xenial
 
+branches:
+  except:
+    - gh-pages
+
 services:
   - docker
 
