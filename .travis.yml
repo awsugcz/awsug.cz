@@ -1,8 +1,8 @@
 dist: xenial
 
 branches:
-  except:
-    - gh-pages
+  only:
+  - master
 
 services:
   - docker
