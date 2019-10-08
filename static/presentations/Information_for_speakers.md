@@ -45,4 +45,3 @@ All speakers should do these tasks after the Meetup:
 * Youtube: [https://www.youtube.com/playlist?list=PL0Qk7ytdTD262PgKQ1GgFHX2IdYzhWM1E](https://www.youtube.com/playlist?list=PL0Qk7ytdTD262PgKQ1GgFHX2IdYzhWM1E)
 * Meetup: [https://www.meetup.com/Prague-AWS-Meetup/](https://www.meetup.com/Prague-AWS-Meetup/)
 * Meetup Photos: [https://www.meetup.com/Prague-AWS-Meetup/photos/](https://www.meetup.com/Prague-AWS-Meetup/photos/)
-* Google+: [https://plus.google.com/113057208587821984112](https://plus.google.com/113057208587821984112)
