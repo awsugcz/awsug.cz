@@ -19,7 +19,7 @@ the following way:
 
 * Copy your presentation to the directory inside Git repository.
   The presentation file name should looks like
-  "```<date>-<name_surname>-<presentation_name>.pdf```":
+  "`<date>-<name_surname>-<presentation_name>.pdf`":
 
   ```bash
   cp ~/presentations/my_presentation.pdf static/presentations/2017-12-12/2017-09-20-Vladimir_Simek-Running_Docker_Containers_on_AWS.pdf
@@ -43,7 +43,10 @@ the following way:
   to GitHub:
 
   ```bash
-  $ git status
+  git status
+  ```
+
+  ```text
   On branch feature/add_presentation
   Your branch is up-to-date with 'origin/master'.
 
@@ -60,18 +63,24 @@ the following way:
           static/presentations/2017-12-12/2017-09-20-Vladimir_Simek-Running_Docker_Containers_on_AWS.pdf
 
   no changes added to commit (use "git add" and/or "git commit -a")
+  ```
 
+  ```bash
+  git add .
+  git commit -m  "Adding presentation from 2017-09-20 by Vladimir Simek - Running Docker Containers on AWS"
+  ```
 
-  $ git add .
-
-
-  $ git commit -m  "Adding presentation from 2017-09-20 by Vladimir Simek - Running Docker Containers on AWS"
+  ```text
   [feature/add_presentation 9e5f03e] Adding presentation from 2017-09-20 by Vladimir Simek - Running Docker Containers on AWS
   3 files changed, 43 insertions(+), 2 deletions(-)
   create mode 100644 static/presentations/2017-12-12/2017-09-20-Vladimir_Simek-Running_Docker_Containers_on_AWS.pdf
+  ```
 
+  ```bash
+  git push
+  ```
 
-  $ git push
+  ```text
   Counting objects: 8, done.
   Delta compression using up to 4 threads.
   Compressing objects: 100% (8/8), done.
