@@ -69,7 +69,7 @@ googleAnalytics = "UA-96620987-2"
         [[params.services.list]]
             icon = "fa-github-alt"
             title = "I want to help"
-            description = "See our [GitHub](https://github.com/awsugcz) or [presentations](https://github.com/awsugcz/awsug.cz/tree/master/static/presentations)"
+            description = "See our [GitHub](https://github.com/awsugcz) or [Presentations](https://github.com/awsugcz/awsug.cz/tree/master/static/presentations)"
 
         [[params.services.list]]
             icon = "fa-youtube"
