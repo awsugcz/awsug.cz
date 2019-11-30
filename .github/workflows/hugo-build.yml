@@ -36,7 +36,7 @@ jobs:
         EOF
         sudo caddy -quiet &
         go get -u github.com/raviqqe/muffet
-        ~/go/bin/muffet --concurrency=10 --skip-tls-verification https://${GITHUB_REPOSITORY##*/}
+        ~/go/bin/muffet --concurrency=10 --skip-tls-verification --exclude "https://.*linkedin.com.*" https://${GITHUB_REPOSITORY##*/}
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v2.5.1
