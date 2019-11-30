@@ -1,0 +1,49 @@
+name: "hugo-build"
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  hugo-build:
+    name: "Hugo build"
+    runs-on: ubuntu-18.04
+
+    steps:
+    - uses: actions/checkout@v1
+      with:
+        submodules: true
+
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v2.3.0
+      with:
+        hugo-version: '0.60.1'
+
+    - name: Build
+      run: |
+        hugo --gc
+        cp LICENSE README.md public/
+        echo ${GITHUB_REPOSITORY##*/} > public/CNAME
+
+    - name: "Check links"
+      run: |
+        echo "127.0.0.1 ${GITHUB_REPOSITORY##*/}" | sudo tee -a /etc/hosts
+        curl -s https://getcaddy.com | bash -s personal
+        cat > Caddyfile << EOF
+        https://${GITHUB_REPOSITORY##*/}
+        root public
+        tls self_signed
+        EOF
+        sudo caddy -quiet &
+        go get -u github.com/raviqqe/muffet
+        ~/go/bin/muffet --concurrency=10 --skip-tls-verification https://${GITHUB_REPOSITORY##*/}
+
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v2.5.1
+      env:
+        ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        PUBLISH_BRANCH: gh-pages
+        PUBLISH_DIR: public/
+      with:
+        emptyCommits: false
+        forceOrphan: true
