@@ -83,18 +83,21 @@
 * Customers need hybrid applications when spreading traffic across a combination
   of existing on-premises resources and new resources running in the AWS Cloud
 
-![target type](https://media.amazonwebservices.com/blog/2017/alb_target_type_2.png "target type")
+![target type](https://media.amazonwebservices.com/blog/2017/alb_target_type_2.png
+"target type")
 
 ## Amazon EC2 Elastic GPUs
 
-[https://aws.amazon.com/blogs/aws/in-the-work-amazon-ec2-elastic-gpus/](https://aws.amazon.com/blogs/aws/in-the-work-amazon-ec2-elastic-gpus/), ([https://aws.amazon.com/blogs/aws/new-ec2-elastic-gpus-for-windows/](https://aws.amazon.com/blogs/aws/new-ec2-elastic-gpus-for-windows/))
+[https://aws.amazon.com/blogs/aws/in-the-work-amazon-ec2-elastic-gpus/](https://aws.amazon.com/blogs/aws/in-the-work-amazon-ec2-elastic-gpus/),
+([https://aws.amazon.com/blogs/aws/new-ec2-elastic-gpus-for-windows/](https://aws.amazon.com/blogs/aws/new-ec2-elastic-gpus-for-windows/))
 
 * Attach low-cost graphics acceleration to a wide range of EC2 instances over
   the network
 
 * Easy as attaching Amazon EBS volumes
 
-* Supports OpenGL 3.3 and offer up to 8GiB of GPU memory (Amazon-optimized OpenGL library needs to be installed)
+* Supports OpenGL 3.3 and offer up to 8GiB of GPU memory (Amazon-optimized
+  OpenGL library needs to be installed)
 
 * Used for virtual desktops, gaming or industrial design
 
@@ -121,9 +124,11 @@
 * Events recorded in Amazon Aurora (such as database logins, user information,
   details of queries executed, and impacted tables) may log to CloudWatch
 
-![Amazon Aurora Enables Database Activity Monitoring with CloudWatch Logs](https://d2908q01vomqb2.cloudfront.net/887309d048beef83ad3eabf2a79a64a389ab1c9f/2017/09/08/Search-Logs.jpg "Amazon Aurora Enables Database Activity Monitoring with CloudWatch Logs")
+![Amazon Aurora Enables Database Activity Monitoring with CloudWatch Logs](https://d2908q01vomqb2.cloudfront.net/887309d048beef83ad3eabf2a79a64a389ab1c9f/2017/09/08/Search-Logs.jpg
+"Amazon Aurora Enables Database Activity Monitoring with CloudWatch Logs")
 
-![Amazon Aurora Enables Database Activity Monitoring with CloudWatch Logs](https://d2908q01vomqb2.cloudfront.net/887309d048beef83ad3eabf2a79a64a389ab1c9f/2017/09/11/Define-Pattern1.jpg "Amazon Aurora Enables Database Activity Monitoring with CloudWatch Logs")
+![Amazon Aurora Enables Database Activity Monitoring with CloudWatch Logs](https://d2908q01vomqb2.cloudfront.net/887309d048beef83ad3eabf2a79a64a389ab1c9f/2017/09/11/Define-Pattern1.jpg
+"Amazon Aurora Enables Database Activity Monitoring with CloudWatch Logs")
 
 ## Stop & Resume Workloads on EC2 Spot Instances
 

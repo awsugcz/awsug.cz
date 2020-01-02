@@ -1,0 +1,18 @@
+name: markdown
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+  push:
+
+jobs:
+  markdownlint-check:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: markdownlint-cli
+        uses: nosborn/github-action-markdown-cli@v1.1.1
+        with:
+          files: .
+          config_file: .markdownlint.yml
