@@ -37,7 +37,7 @@ jobs:
           INPUT_PAGES_PATH: public
           INPUT_CMD_PARAMS: --verbose --buffer-size=8192 --concurrency=10 --skip-tls-verification --exclude=linkedin.com
         run: |
-          wget -qO- https://raw.githubusercontent.com/ruzickap/action-broken-link-checker/v1/entrypoint.sh | bash
+          wget -qO- https://raw.githubusercontent.com/ruzickap/action-my-broken-link-checker/v1/entrypoint.sh | bash
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v2.8.0
