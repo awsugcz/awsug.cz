@@ -11,9 +11,6 @@ You should be avare of the following notes before the meetup.
 * You should fill in this short speaker form to let us know more about you
   and your presentation: [https://goo.gl/forms/mFYRDTEL41DCewKP2](https://goo.gl/forms/mFYRDTEL41DCewKP2)
 
-* You can get as AWS Prague Meetup speaker 50$ [AWS credit](https://aws.amazon.com/awscredits/).
-  If you want to get the credit please let us know at [awsugcz@gmail.com](mailto:awsugcz@gmail.com).
-
 * You should arrive 15 minutes before start of the Meetup and contact one
   of the organizers.
 
