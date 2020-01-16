@@ -30,7 +30,7 @@ const handlers = {
     'SayHalloIntent': function () {
         var speechOutput = '';
         var nameFromBot = '';
-        
+
         nameFromBot = this.event.request.intent.slots.name.value;
         speechOutput = "Hey " + nameFromBot + ", nice to meet you!";
 
@@ -42,7 +42,7 @@ const handlers = {
         const reprompt = HELP_REPROMPT; //assign the reprompt message
 
         this.response.speak(speechOutput).listen(reprompt); //setting the help message followed by listen for the reprompt
-        this.emit(':responseReady'); //send to Alexa 
+        this.emit(':responseReady'); //send to Alexa
     },
     'AMAZON.CancelIntent': function () {
         this.response.speak(STOP_MESSAGE); //speak Stop message
