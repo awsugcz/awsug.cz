@@ -1,6 +1,3 @@
-# pre-commit config file
-.pre-commit-config.yaml
-
 # Generated files by Hugo
 public/
 resources/_gen/
