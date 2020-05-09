@@ -1,3 +1,9 @@
+# pre-commit configuration file
+.pre-commit-config.yaml
+
+# release-it configuration file
+.release-it.yml
+
 # Generated files by Hugo
 public/
 resources/_gen/
