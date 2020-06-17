@@ -11,7 +11,7 @@ jobs:
   markdownlint-check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v2.3.0
 
       - name: markdownlint-cli
         uses: nosborn/github-action-markdown-cli@v1.1.1
