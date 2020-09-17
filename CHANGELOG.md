@@ -1,5 +1,12 @@
 # Changelog
 
+## [v1.0.1](https://github.com/awsugcz/awsug.cz/compare/v1.0.0...v1.0.1) (2020-09-17)
+
+- Add new line to periodic-broken-link-checks.yml [`#18`](https://github.com/awsugcz/awsug.cz/pull/18)
+- Replace markdown linter [`#16`](https://github.com/awsugcz/awsug.cz/pull/16)
+- Move to GitHub's Dependabot [`#13`](https://github.com/awsugcz/awsug.cz/pull/13)
+- CHANGELOG file update [`#12`](https://github.com/awsugcz/awsug.cz/pull/12)
+
 ## v1.0.0 (2020-05-09)
 
 - Remove G+ [`#11`](https://github.com/awsugcz/awsug.cz/pull/11)
@@ -11,7 +18,6 @@
 - Fix formatting in services.html [`9fe5a8d`](https://github.com/awsugcz/awsug.cz/commit/9fe5a8d810f1e6058543f076d8dcce8ba6dd4d22)
 - Add CHANGELOG.md to ignore_files to skip it during markdown checks [`eca7350`](https://github.com/awsugcz/awsug.cz/commit/eca7350ee2252571ca39e39a60ccb4d408abeeb4)
 - Add .pre-commit-config.yaml and .release-it.yml to .gitignore [`83abc58`](https://github.com/awsugcz/awsug.cz/commit/83abc58457c40e6b784624644054b713752db4e4)
-- Improve dependabot by adding default_labels "dependencies" [`b798b14`](https://github.com/awsugcz/awsug.cz/commit/b798b14e34a817d00a7ecebc6fe5c54931f7d062)
 - Update ubuntu from ubuntu-18.04 -&gt; ubuntu-latest [`e074b6f`](https://github.com/awsugcz/awsug.cz/commit/e074b6f43cf25d0947547944a2f9c0bb1dbd67b7)
 - Use submodules=true parameter for actions/checkout [`1efb2f4`](https://github.com/awsugcz/awsug.cz/commit/1efb2f4f37e66d0c92b77d403dd28460543f5cff)
 - Use action-yamllint with proper tag "v1" instead of master [`941e82e`](https://github.com/awsugcz/awsug.cz/commit/941e82ea163ed69cc7e06c410ae686b9178636a0)
@@ -50,9 +56,7 @@
 - Adding Prague AWS User Group Meetup - 2019.09.17 [`7d7b1b5`](https://github.com/awsugcz/awsug.cz/commit/7d7b1b5b486d0d9699b638c479d01c37dae7cef7)
 - Adding presentation How to migrate to AWS without a mental breakdown by Michal Artazov [`31b0884`](https://github.com/awsugcz/awsug.cz/commit/31b08845c453e4b9bcd7cde9ce000f233dae0921)
 - Adding presentation from 2019-09-18 by Vladimir Simek - Serverless on AWS: Architectural Patterns and Best Practices [`9330dbc`](https://github.com/awsugcz/awsug.cz/commit/9330dbc58621ee53f5c8407968453e201d2ce24a)
-- Disable lables in dependabot config file [`b126488`](https://github.com/awsugcz/awsug.cz/commit/b1264880c1c690dedd83816064cad30a7d75aa24)
 - Fix TravisCI build - build only master branch [`71b73ff`](https://github.com/awsugcz/awsug.cz/commit/71b73ffd80def6def75a4bdeac3d36aebf78b86c)
-- Adding dependabot config [`fe119aa`](https://github.com/awsugcz/awsug.cz/commit/fe119aac376dc3255e96a5971648c057fc95b9bb)
 - Adding 2019.04.10-Prague_AWS_Meetup photo [`e34b0f1`](https://github.com/awsugcz/awsug.cz/commit/e34b0f1d926e0ba82d6f687ebe70e04c6747bb02)
 - Minor cosmetic changes in README files [`bade951`](https://github.com/awsugcz/awsug.cz/commit/bade9513bb4978cdbd3dd3450802340e14d59d24)
 - Adding presentation from 2019-10-04 by Tomas Turek - Serverless Architecture  [`8a9eb8c`](https://github.com/awsugcz/awsug.cz/commit/8a9eb8cfa76c4589305fb768c4b5674f0dff2d3b)
@@ -97,7 +101,6 @@
 - Use HTTPS by default [`53ae5f1`](https://github.com/awsugcz/awsug.cz/commit/53ae5f115ad2e6114bfd884f384e0e903cda7e1b)
 - Adding netlify [`5eb81ef`](https://github.com/awsugcz/awsug.cz/commit/5eb81efa13b16bf6cb6074beef8931d198dc3477)
 - Typo fixed... [`c10eece`](https://github.com/awsugcz/awsug.cz/commit/c10eecec111dc6a3482444c51c34a4c245f665c9)
-- Adding AWS at Zonky presentation [`0ac9429`](https://github.com/awsugcz/awsug.cz/commit/0ac9429eabd4034ecc02bb07525cd671b518dad6)
 - Adding Vladimir Simek's presentaiton - Best of reInvent 2017 [`f1ab0f8`](https://github.com/awsugcz/awsug.cz/commit/f1ab0f8c9d49d8fc04a18003618053cdf959a86c)
 - Add Presentation Files [`58b6b9d`](https://github.com/awsugcz/awsug.cz/commit/58b6b9d7513aeb473b4b093916599db338bfdbb1)
 - Small improvement [`00b358d`](https://github.com/awsugcz/awsug.cz/commit/00b358d64b94b5f4436d785e1234e4e7351fc37f)
