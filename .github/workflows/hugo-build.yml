@@ -33,8 +33,8 @@ jobs:
         run: |
           export INPUT_URL="https://${{ github.event.repository.name }}"
           export INPUT_PAGES_PATH="public"
-          export INPUT_CMD_PARAMS="--verbose --buffer-size=8192 --max-connections=10 --skip-tls-verification --exclude=($( echo ${EXCLUDE} | tr ' ' '|' ))"
-          wget -qO- https://raw.githubusercontent.com/ruzickap/action-my-broken-link-checker/v1/entrypoint.sh | bash
+          export INPUT_CMD_PARAMS="--verbose --buffer-size=8192 --max-connections=10 --color=always --skip-tls-verification --exclude=($( echo ${EXCLUDE} | tr ' ' '|' ))"
+          wget -qO- https://raw.githubusercontent.com/ruzickap/action-my-broken-link-checker/v2/entrypoint.sh | bash
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
