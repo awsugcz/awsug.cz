@@ -37,7 +37,7 @@ All speakers should do these tasks after the Meetup:
 
 * Web: [https://awsug.cz/](https://awsug.cz/)
 * GitHub: [https://github.com/awsugcz/awsug.cz](https://github.com/awsugcz/awsug.cz)
-* Presentations: [https://github.com/awsugcz/awsug.cz/tree/master/static/presentations](https://github.com/awsugcz/awsug.cz/tree/master/static/presentations)
+* Presentations: [https://github.com/awsugcz/awsug.cz/tree/main/static/presentations](https://github.com/awsugcz/awsug.cz/tree/main/static/presentations)
 * Speaker form: [https://goo.gl/forms/mFYRDTEL41DCewKP2](https://goo.gl/forms/mFYRDTEL41DCewKP2)
 * Youtube: [https://www.youtube.com/playlist?list=PL0Qk7ytdTD262PgKQ1GgFHX2IdYzhWM1E](https://www.youtube.com/playlist?list=PL0Qk7ytdTD262PgKQ1GgFHX2IdYzhWM1E)
 * Meetup: [https://www.meetup.com/Prague-AWS-Meetup/](https://www.meetup.com/Prague-AWS-Meetup/)

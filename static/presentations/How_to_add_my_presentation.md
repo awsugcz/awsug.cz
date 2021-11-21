@@ -14,7 +14,7 @@ the following way:
   cd /tmp
   git clone git@github.com:ruzickap/awsug.cz.git
   cd awsug.cz
-  git checkout -b feature/add_presentation remotes/origin/master
+  git checkout -b feature/add_presentation remotes/origin/main
   ```
 
 * Copy your presentation to the directory inside Git repository.
@@ -48,7 +48,7 @@ the following way:
 
   ```text
   On branch feature/add_presentation
-  Your branch is up-to-date with 'origin/master'.
+  Your branch is up-to-date with 'origin/main'.
 
   Changes not staged for commit:
     (use "git add <file>..." to update what will be committed)
