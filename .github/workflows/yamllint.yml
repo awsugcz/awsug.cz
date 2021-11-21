@@ -6,12 +6,6 @@ on:
     paths:
       - '**.yml'
       - '**.yaml'
-  push:
-    branches:
-      - master
-    paths:
-      - '**.yml'
-      - '**.yaml'
 
 jobs:
   yamllint-check:

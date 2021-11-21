@@ -29,7 +29,7 @@ jobs:
         env:
           EXCLUDE: |
             linkedin.com
-            github.com/awsugcz/awsug.cz/blob/master/static/presentations
+            github.com/awsugcz/awsug.cz/blob/main/static/presentations
         run: |
           export INPUT_URL="https://${{ github.event.repository.name }}"
           export INPUT_PAGES_PATH="public"
@@ -38,7 +38,7 @@ jobs:
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/master' }}
+        if: ${{ github.ref == 'refs/heads/main' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public

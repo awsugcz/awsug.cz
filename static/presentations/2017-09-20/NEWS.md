@@ -13,7 +13,7 @@
 * Faster performance, Kibana 5.5 Enhancements, Self-service restore from
   automated snapshots
 
-![Create Elasticsearch domain](https://raw.githubusercontent.com/awsugcz/awsug.cz/master/static/presentations/2017-09-20/img/Create_Elasticsearch_domain.png
+![Create Elasticsearch domain](https://raw.githubusercontent.com/awsugcz/awsug.cz/main/static/presentations/2017-09-20/img/Create_Elasticsearch_domain.png
 "Create Elasticsearch domain")
 
 ## Route 53 - Support for logging
