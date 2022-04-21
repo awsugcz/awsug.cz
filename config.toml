@@ -3,7 +3,7 @@ baseurl = "https://awsug.cz/"
 languageCode = "en-us"
 title = "Prague AWS User Group"
 theme = "hugo-creative-theme"
-googleAnalytics = "UA-96620987-2"
+googleAnalytics = "G-Q98WV1L5PD"
 
 [params]
 
