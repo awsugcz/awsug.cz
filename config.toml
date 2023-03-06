@@ -82,6 +82,11 @@ googleAnalytics = "G-Q98WV1L5PD"
             description = "See the Meetup [Photos](https://photos.app.goo.gl/sE5kAt95ipmJ3ypPA)"
 
         [[params.services.list]]
+            icon = "fa-slack"
+            title = "Slack"
+            description = "Join [Slack](https://pragueawsusergroup.slack.com/)"
+
+        [[params.services.list]]
             icon = "fa-envelope-o"
             title = "Email"
             description = "<awsugcz@gmail.com>"
