@@ -72,14 +72,9 @@ googleAnalytics = "G-Q98WV1L5PD"
             description = "See our [GitHub](https://github.com/awsugcz) or [Presentations](https://github.com/awsugcz/awsug.cz/tree/main/static/presentations)"
 
         [[params.services.list]]
-            icon = "fa-youtube"
-            title = "YouTube"
-            description = "[YouTube Channel](https://www.youtube.com/playlist?list=PL0Qk7ytdTD262PgKQ1GgFHX2IdYzhWM1E)"
-
-        [[params.services.list]]
             icon = "fa-camera"
-            title = "Photos"
-            description = "See the Meetup [Photos](https://photos.app.goo.gl/sE5kAt95ipmJ3ypPA)"
+            title = "Photos & YouTube"
+            description = "See the Meetup [Photos](https://photos.app.goo.gl/sE5kAt95ipmJ3ypPA) or [videos](https://www.youtube.com/playlist?list=PL0Qk7ytdTD262PgKQ1GgFHX2IdYzhWM1E)"
 
         [[params.services.list]]
             icon = "fa-slack"
