@@ -8,7 +8,7 @@ jobs:
   markdownlint-check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Markdown Lint
         uses: ruzickap/action-my-markdown-linter@v1
