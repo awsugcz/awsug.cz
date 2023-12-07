@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.0](https://github.com/awsugcz/awsug.cz/compare/v1.0.2...v1.1.0) (2023-12-07)
+
+
+### Features
+
+* **release:** add release-please ([058b3d9](https://github.com/awsugcz/awsug.cz/commit/058b3d9daaef8b175303e628de58a6660edf554a))
+
+
+### Bug Fixes
+
+* **build:** pin hugo version, remove github version autoupdates ([85a0abf](https://github.com/awsugcz/awsug.cz/commit/85a0abfda0f1760b59cbb1fa8a88012ed9cf8a2a))
+
 ## [v1.0.2](https://github.com/awsugcz/awsug.cz/compare/v1.0.1...v1.0.2)
 
 - style(gha): delete empty lines and hugo version [`#54`](https://github.com/awsugcz/awsug.cz/pull/54)
