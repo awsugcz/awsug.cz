@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/awsugcz/awsug.cz/compare/v1.1.0...v1.1.1) (2025-05-09)
+
+
+### Bug Fixes
+
+* update action versions in multiple workflow files ([e75038f](https://github.com/awsugcz/awsug.cz/commit/e75038fee429a4818f95df74b9a3dfb92acc76e9))
+
 ## [1.1.0](https://github.com/awsugcz/awsug.cz/compare/v1.0.2...v1.1.0) (2023-12-07)
 
 
