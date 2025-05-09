@@ -10,12 +10,12 @@ jobs:
   hugo-build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
         with:
           submodules: true
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@75d2e84710de30f6ff7268e08f310b60ef14033f # v3
         with:
           hugo-version: '0.89.4'
 
@@ -26,14 +26,14 @@ jobs:
           echo "${{ github.event.repository.name }}" > public/CNAME
 
       - name: Check broken links
-        uses: ruzickap/action-my-broken-link-checker@v2
+        uses: ruzickap/action-my-broken-link-checker@f5a3296e86117675ab07b9fbf1a92027e5c340ef # v2
         with:
           url: https://${{ github.event.repository.name }}
           pages_path: public
           cmd_params: '--exclude=(linkedin.com|https://github.com/${{ github.repository_owner }}/${{ github.event.repository.name }}/tree/main/static/presentations/|https://github.com/${{ github.repository_owner }}/${{ github.event.repository.name }}/blob/main/static/presentations/) --max-connections-per-host=5 --color=always --rate-limit=5 --header="User-Agent:curl/7.54.0" --skip-tls-verification'
 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@4f9cc6602d3f66b9c108549d475ec49e8ef4d45e # v4
         if: ${{ github.ref == 'refs/heads/main' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
